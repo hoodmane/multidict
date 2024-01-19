@@ -1,3 +1,9 @@
 Revert to using the public argument parsing API
 :c:func:`PyArg_ParseTupleAndKeywords` under Python 3.13
 -- :user:`webknjaz`.
+
+Reversion to public argument parsing API extended to also
+apply to Python 3.12 as well to avoid build errors with
+clang 16.9.6 and gcc-14 reported in :issue:`926`, via PR
+:issue:`929`.
+-- :user:`charles-dyfis-net`
